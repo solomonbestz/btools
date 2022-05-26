@@ -45,9 +45,9 @@
             <input type="checkbox" id="show-menu">
             <label for="show-menu" class="menu-icon"><i class="fas fa-bars"></i></label>
           <div class="content">
-          <div class="logo"><a href="index.html" >B-Tools</a></div>
+            <div class="logo"><a href="{% url 'home'%}" >B-Tools</a></div>
             <ul class="links">
-              <li><a href="index.html">Home</a></li>
+              <li><a href="{% url 'home'%}">Home</a></li>
               <li><a href="#">About</a></li>
               <li><a href="#">Contact</a></li>
               <li><a href="#">Tools</a></li>
@@ -172,9 +172,6 @@
             </div>   
         </div>
     </div>
-
-    <!--Script-->
-    <script src="script.js"></script>
     
         <div class="container-GD-2">
             <div class="container-GD-2-semi">
@@ -188,8 +185,8 @@
 
 </section>
 
-  <script src="drive.js"></script>
-  <script class="typo" src="main.js"></script>
+  <script src="{% static 'scripts/drive.js'%}"></script>
+  <script class="typo" src="{% static 'scripts/main.js'%}"></script>
 
   </div>
 
