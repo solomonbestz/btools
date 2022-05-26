@@ -1,0 +1,230 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/png" href="assets/favicon.png">
+    <link href="{% static 'styles/main.css' %}" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/fontawesome.min.css" integrity="sha512-Rcr1oG0XvqZI1yv1HIg9LgZVDEhf2AHjv+9AuD1JXWGLzlkoKDVvE925qySLcEywpMAYA/rkg296MkvqBF07Yw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <title>B-Tools</title>
+</head>
+<body>
+
+<!--------------------MENU-BAR-1----------------->
+
+
+    <section>
+        <div class="menu-bar-1">
+            <a href="#"></a>
+            <ul>
+                <section class="user-icon" ><i class="fa fa-user"></i><p>Register</p></section>
+                <a href="#" ><i class="fab fa-twitter" ></i></a>
+                <a href="#" ><i class="fab fa-telegram" ></i></a>
+                <a href="#" ><i class="fab fa-facebook" ></i></a>
+            </ul>
+        </div>
+    </section>
+
+    <div class="menu-bar">
+        <nav>
+
+            <!--================ SEARCH NOT RELEVANT YET ==================-->
+
+            <input type="checkbox" id="show-search">
+            <input type="checkbox" id="show-menu">
+            <label for="show-menu" class="menu-icon"><i class="fas fa-bars"></i></label>
+          <div class="content">
+          <div class="logo"><a href="index.html" >B-Tools</a></div>
+            <ul class="links">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Contact</a></li>
+              <li><a href="#">Tools</a></li>
+          </div>
+
+<!-- ===============FOR SEARCHING ================= -->
+
+          <label for="show-search" class="search-icon"><i class="fas fa-search"></i></label>
+          <form action="#" class="search-box">
+            <input type="text" placeholder="Search The impossible..." required>
+            <button type="submit" class="go-icon"><i class="fas fa-long-arrow-alt-right"></i></button>
+          </form>
+        </nav>
+      </div>
+
+
+
+
+    <section class="Row">
+      <section class="GoogleDrive">
+      <h1 class="ggg" style="color: blue; font-style: 'Monospace';">DIRECT LINK GENERATOR ><span class="typed-text"></span><span class="cursor"></span></h1>
+        <p class="gg"> Tool to create direct download for your Google Drive files.</p>
+      
+        <!-- <div class="GD-form">
+            <h1>ADVERT</h1>
+            <p>300 * 800</p>
+            <div class=line></div>
+            <p></p>
+        </div>
+      <section class="section-2">
+        <div class="GD-form-2">
+          <h1</h1>
+          <p>300 * 800</p>
+          <div class=line></div>
+          <p></p>
+      </div>
+    </section> -->
+
+
+        <div class="container-GD">
+
+            <!-- ===========FOR DIRECT DOWNLOAD LINK  BOX ============== -->
+
+            <div class="Drive-container">
+                <div class="panel panel-default panel-primary" id="mainpanel">
+                  <div class="panel-heading">
+                    <h1 class="panel-title"><svg style="width:24px;height:24px">
+                  <path fill="currentColor" d="M7.71,3.5L1.15,15L4.58,21L11.13,9.5M9.73,15L6.3,21H19.42L22.85,15M22.28,14L15.42,2H8.58L8.57,2L15.43,14H22.28Z" />
+              </svg>Google Drive Direct Download Link Generator</h1>
+                  </div>
+                  <div class="panel-body">
+                    <form onsubmit="return false">
+                      <div class="form-group">
+                        <label for="sharelink">Share link</label>
+                        <input type="text" class="form-control" id="sharelink" placeholder="paste your google drive link here" autofocus="true">
+                      <button onclick="generatebtn()" class="Dbtn Dbtn-primary" >Generate Link</button>
+                      </div>
+                      <div class="form-group">
+                        <label for="downloadlink">Download link</label>
+                        <div class="input-group">
+                          <input type="text" class="form-control" id="downloadlink" readonly>
+                          <span class="input-group-btn">
+                      <button onclick="copybtn()" class="Dbtn Dbtn-primary">Copy link</button>
+                      <p id="alert-copy"></p>
+                    </span>
+                        </div>
+                      </div>
+                    </form>
+                    
+                  </div>
+                  
+                </div>
+              </div>
+
+
+        </div>
+
+    <!-- ================ FOR WRITE-UP SECOND BUTTON ================ -->
+
+        <div class="container-GD-1">
+          <div class="wrapper">
+            <button class="toggle">
+                What Does B-Tools Offer??
+                <i class="fas fa-plus icon"></i>
+            </button>
+            <div class="words">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta aliquam facere adipisci quod mollitia, aut nemo deleniti fugiat et, corrupti sequi. Omnis dolorem quos eligendi placeat soluta sint corrupti quod.</p>
+            </div>
+        </div>
+        <div class="wrapper">
+            <button class="toggle">
+                Why do I need to be a member?
+                <i class="fas fa-plus icon"></i>
+            </button>
+            <div class="words">
+                <p>As a member you get update from us, Get access to all tools (Totally Free), and you be part of the community.</p>
+            </div>
+        </div>
+        <div class="wrapper">
+            <button class="toggle">
+                How do I become a member?
+                <i class="fas fa-plus icon"></i>
+            </button>
+            <div class="words">
+                <p>You click, You Register, You use.</p>
+            </div>
+        </div>
+<br>
+<br>
+
+<!--========== G-DRIVE INSTRUCTION =========== -->
+
+        <div>
+            <h2><hr> <br> How To Get Direct Link with This Tool?</h2>
+            <div class="G-D-instruction-block">
+
+              <p class="G-D-instruction">When you create download links for your files, you can bypass the <strong>Google Drive </strong> page & let users download the file directly.</p>
+            <br>
+            <p class="G-D-instruction">1. Go to your <strong>Google Drive</strong> dashboard. </p>
+            <p class="G-D-instruction">2. Right click the file you want to create the download link for & click on 'Get Link'</p>
+
+            </div>   
+        </div>
+    </div>
+
+    <!--Script-->
+    <script src="script.js"></script>
+    
+        <div class="container-GD-2">
+            <div class="container-GD-2-semi">
+                <p class="Note-Blueback">NOTE:</p>
+                <p class="Note-GD-first">This tool will only work for files that you UPLOAD to Google Drive and uses the following permissions to share: "Public on the web" or "Anyone with the link".</p>
+                <p class="Note-GD-second">This tool will not work for Google Documents (Documents, Spreadsheets, Presentations, etc.) that created inside Google Drive. If you want to create a direct link for Google Documents (Documents, Spreadsheets, Presentations, etc.) that created inside Google Drive, first download them to your computer then upload that file back on to Google Drive.</p>
+            </div>
+            <div class="container-GD-3"></div>
+        </div>
+  </section>
+
+</section>
+
+  <script src="drive.js"></script>
+  <script class="typo" src="main.js"></script>
+
+  </div>
+
+   <!----==== Footer FLASH!!!!!!!!!!!!!!---->
+   <div class="footer" id="footer">
+    <div class="container">
+       <div class="row">
+          <div class="footer-col-1">
+             <h3 class="our-app">Download Our App</h3>
+             <p class="our-app-1">Download App for Android and IOS mobile phone.</p>
+             <div class="app-logo">
+                <img src="{% static 'media/play-store.png'%}" alt="play-store">
+                <img src="{% static 'media/app-store.png'%}" alt="app-store">
+             </div>
+          </div>
+       </div>
+       <hr>
+       <p class="Footer-CP" class="copyright">Copyright <script>document.write(new Date().getFullYear())</script> Google Drive Direct Download Link Generator</p>
+    </div>
+ </div>
+ <!-- end footer -->
+
+
+ <!-- <script src="type.js"></script>
+ <script>
+    var typed = new Typed('animate', {
+      strings: [
+          "Google Drive",
+          "Drop Box",
+          "Object"
+      ],
+      typeSpeed: 50,
+      backSpeed: 50,
+      loop: true
+    });
+  </script> -->
+</body>
+</html>

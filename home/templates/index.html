@@ -1,0 +1,238 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/png" href="assets/favicon.png">
+    <link href="{% static 'styles/main.css' %}" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/fontawesome.min.css" integrity="sha512-Rcr1oG0XvqZI1yv1HIg9LgZVDEhf2AHjv+9AuD1JXWGLzlkoKDVvE925qySLcEywpMAYA/rkg296MkvqBF07Yw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>B-Tools</title>
+</head>
+<body>
+
+<!--------------------MENU-BAR-1----------------->
+
+
+    <section>
+        <div class="menu-bar-1">
+            <a href="#"></a>
+            <ul>
+                <section class="user-icon" ><i class="fa fa-user"></i><p>Register</p></section>
+                <a href="#" ><i class="fab fa-twitter" ></i></a>
+                <a href="#" ><i class="fab fa-telegram" ></i></a>
+                <a href="#" ><i class="fab fa-facebook" ></i></a>
+            </ul>
+        </div>
+    </section>
+
+    <div class="menu-bar">
+        <nav>
+
+            <!--================ SEARCH NOT RELEVANT YET ==================-->
+
+            <input type="checkbox" id="show-search">
+            <input type="checkbox" id="show-menu">
+            <label for="show-menu" class="menu-icon"><i class="fas fa-bars"></i></label>
+          <div class="content">
+          <div class="logo"><a href="{% url 'home'%}" >B-Tools</a></div>
+            <ul class="links">
+              <li><a href="{% url 'home'%}">Home</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Contact</a></li>
+              <li><a href="#">Tools</a></li>
+          </div>
+
+<!-- ===============FOR SEARCHING ================= -->
+
+          <label for="show-search" class="search-icon"><i class="fas fa-search"></i></label>
+          <form action="#" class="search-box">
+            <input type="text" placeholder="Search The impossible..." required>
+            <button type="submit" class="go-icon"><i class="fas fa-long-arrow-alt-right"></i></button>
+          </form>
+        </nav>
+      </div>
+
+<section>
+    <section class="first-block">
+        <h1 class="P-tools"><strong>POPULAR TOOLS</strong></h1>
+        <p> A set of tool to give you a comprehensive inside view of your online profile.</p>
+    <div class="contain">
+        <div class="row">
+            <a href="#">
+                <section class="circle">
+                    <a href="#" ><i class="fa fa-book fa-customize"></i></a>
+                    <p class="text-under">Merge PDF</p>
+                </section>
+            </a>
+            <a href="#">
+                <section class="circle" >
+                    <a href="#" ><i class="fa fa-text-height fa-customize"></i></a>
+                    <p class="text-under">Upper To LowerCase</p>
+                </section>
+            </a>
+            <a href="#">
+                <section class="circle">
+                    <a href="{% url 'gdrive'%}"><i class="fab fa-google fa-customize"></i></a>
+                    <p class="text-under">G.Drive Link Generator</p>
+                </section>
+            </a>
+            <a href="#">
+                <section class="circle">
+                    <a href="#" ><i class="fa fa-video fa-customize"></i></a>
+                    <p class="text-under">Any Video Downloader</p>
+                </section>
+            </a>
+            <a href="#">
+                <section class="circle">
+                    <a href="#" ><i class="fa fa-check fa-customize"></i></a>
+                    <p class="text-under">Grammer Check</p>
+                </section>
+            </a>
+            <a href="#">
+                <section class="circle">
+                    <a href="#" ><i class="fa fa-link fa-customize"></i></a>
+                    <p class="text-under">Broken Link Detector</p>
+                </section>
+            </a>
+            <a href="#">
+                <section class="circle">
+                    <a href="#" ><i class="fa fa-t fa-customize"></i></a>
+                    <p class="text-under">Image To Text</p>
+                </section>
+            </a>
+            <a href="#">
+                <section class="circle">
+                    <a href="#" ><i class="fa fa-file fa-customize"></i></a>
+                    <p class="text-under">PDF EDITOR</p>
+                </section>
+            </a>
+        </div>
+    </div>
+    </section>
+
+
+<!-- ================SECOND BLOCK FOR ITEM-============= -->
+
+    <section class="second-block">
+        <h1>IMAGE DEFINE TOOLS</h1>
+        <p> A set of image tools for basic and professional editing.</p>
+        <div class="form">
+            <h1>ADVERT</h1>
+            <p>300 * 800</p>
+            <div class=line></div>
+            <p></p>
+        </div>
+        <div class="form-2">
+            <h1>Responsive Advert</h1>
+            <p>400 * 600</p>
+            <div class=line-2></div>
+            <p></p>
+        </div>
+
+        <div class="contain-2">
+            <div class="row">
+                <a href="#">
+                    <section class="circle">
+                        <a href="#" ><i class="fa fa-book fa-customize"></i></a>
+                        <p class="text-under">Merge PDF</p>
+                    </section>
+                </a>
+                <a href="#">
+                    <section class="circle" >
+                        <a href="#" ><i class="fa fa-house fa-customize"></i></a>
+                        <p class="text-under">Merge PDF</p>
+                    </section>
+                </a>
+                <a href="#">
+                    <section class="circle">
+                        <a href="#" ><i class="fa fa-church fa-customize"></i></a>
+                        <p class="text-under">Merge PDF</p>
+                    </section>
+                </a>
+                <a href="#">
+                    <section class="circle">
+                        <a href="#" ><i class="fa fa-video fa-customize"></i></a>
+                        <p class="text-under">Merge PDF</p>
+                    </section>
+                </a>
+                <a href="#">
+                    <section class="circle">
+                        <a href="#" ><i class="fa fa-check fa-customize"></i></a>
+                        <p class="text-under">Merge PDF</p>
+                    </section>
+                </a>
+                <a href="#">
+                    <section class="circle">
+                        <a href="#" ><i class="fa fa-link fa-customize"></i></a>
+                        <p class="text-under">Merge PDF</p>
+                    </section>
+                </a>
+                <a href="#">
+                    <section class="circle">
+                        <a href="#" ><i class="fa fa-laptop fa-customize"></i></a>
+                        <p class="text-under">Merge PDF</p>
+                    </section>
+                </a>
+                <a href="#">
+                    <section class="circle">
+                        <a href="#" ><i class="fa fa-file fa-customize"></i></a>
+                        <p class="text-under">Merge PDF</p>
+                    </section>
+                </a>
+                <a href="#">
+                    <section class="circle">
+                        <a href="#" ><i class="fa fa-gun fa-customize"></i></a>
+                        <p class="text-under">Merge PDF</p>
+                    </section>
+                </a>
+                <a href="#">
+                    <section class="circle">
+                        <a href="#" ><i class="fa fa-image fa-customize"></i></a>
+                        <p class="text-under">Merge PDF</p>
+                    </section>
+                </a>
+                
+
+
+            </div>
+        </div>
+    </section>
+</section>
+
+<center class="button-next">
+    <a href="index.html" class="previous-round">&laquo;Previous</a>
+    <a href="home page 2.html" class="next-round">Next&raquo;</a>
+</center>
+
+
+
+   <!----==== Footer FLASH!!!!!!!!!!!!!!---->
+   <div class="footer" id="footer">
+    <div class="container">
+       <div class="row">
+          <div class="footer-col-1">
+             <h3 class="our-app">Download Our App</h3>
+             <p class="our-app-1">Download App for Android and IOS mobile phone.</p>
+             <div class="app-logo">
+                <img src="{% static 'media/play-store.png' %}" alt="play-store">
+                <img src="{% static 'media/app-store.png' %}" alt="app-store">
+             </div>
+          </div>
+       </div>
+       <hr>
+       <p class="copyright">Copyright <script>document.write(new Date().getFullYear())</script> - B-Tools</p>
+    </div>
+ </div>
+ <!-- end footer -->
+
+</body>
+</html>
