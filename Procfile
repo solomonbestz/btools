@@ -1,1 +1,1 @@
-web gunicorn bestztools.wsgi:application --log-file -
+web: gunicorn bestztools.wsgi:application --log-file -
