@@ -4,7 +4,7 @@ def home(request):
     return render(request, "index.html")
 
 def secondpage(request):
-    return render(request, "mobilehome.html")
+    return render(request, "secondhome.html")
 
 def g_drive(request):
     return render(request, "drive.html")
