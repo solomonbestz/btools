@@ -1,0 +1,167 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/png" href="assets/favicon.png">
+    <link rel="stylesheet" href="{% static 'styles/videodownloader.css'%}">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/fontawesome.min.css" integrity="sha512-Rcr1oG0XvqZI1yv1HIg9LgZVDEhf2AHjv+9AuD1JXWGLzlkoKDVvE925qySLcEywpMAYA/rkg296MkvqBF07Yw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<!-- B-Tool Source By Team 
+Thanks For Checking Noobra -->
+
+    <title>B-Tools</title>
+</head>
+<body>
+
+
+
+<!--------------------MENU-BAR-1----------------->
+
+
+<section>
+    <div class="menu-bar-1">
+        <a href="#"></a>
+        <ul>
+            <section class="user-icon" ><i class="fa fa-user"></i><p>Register</p></section>
+            <a href="#" ><i class="fab fa-twitter" ></i></a>
+            <a href="#" ><i class="fab fa-telegram" ></i></a>
+            <a href="#" ><i class="fab fa-facebook" ></i></a>
+        </ul>
+    </div>
+</section>
+
+<div class="menu-bar">
+    <nav>
+
+        <!--================ SEARCH NOT RELEVANT YET ==================-->
+
+        <input type="checkbox" id="show-search">
+        <input type="checkbox" id="show-menu">
+        <label for="show-menu" class="menu-icon"><i class="fas fa-bars"></i></label>
+      <div class="content">
+      <div class="logo"><a href="{% url 'home'%}" >B-Tools</a></div>
+        <ul class="links">
+          <li><a href="{% url 'home'%}">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Tools</a></li>
+      </div>
+
+<!-- ===============FOR SEARCHING ================= -->
+
+      <label for="show-search" class="search-icon"><i class="fas fa-search"></i></label>
+      <form action="#" class="search-box">
+        <input type="text" placeholder="Search The impossible..." required>
+        <button type="submit" class="go-icon"><i class="fas fa-long-arrow-alt-right"></i></button>
+      </form>
+    </nav>
+  </div>
+
+
+
+
+<section class="Row">
+  <section class="VideoDownloader">
+  <h1 class="ggg">ANY VIDEO DOWNLOADER</h1>
+    <p class="gg"> Enter the URL of the video you want to download below and click the <b>“Download”</b> button. Now sit back and watch as the video is downloaded in seconds.</p>
+
+    <div class="container-VD">
+        <div class="section">
+            <h2 class="OVD">Online Video Downloder</h2>
+            <form class="example">
+                <input type="text" placeholder="Enter Your Vide Link" name="link">
+                <div class="SideD">
+                    <select class="options" required>
+                        <option selected disabled>Video Formats</option>
+                        <option value="mp3">Mp3</option>
+                        <option value="mp4a">144</option>
+                        <option value="360">360</option>
+                        <option value="480">480</option>
+                        <option value="720">720</option>
+                        <option value="1080">1080</option>
+                        <option value="4k">4k</option>
+                        <option value="8k">8k</option>
+                    </select>
+                </div>
+                
+              </form>
+        
+        <p class="Terms">By using our service you accept our <a href="#">Terms of Services</a> and <a href="#"> Privacy Policy</a></p>
+        <br>
+        </div>
+        
+    <div class="HolderF">
+        <div class="wrapper">
+            <div class="button">
+               <div class="icon">
+                  <i class="fab fa-facebook-f"></i>
+               </div>
+               <span>Facebook</span>
+            </div>
+            <div class="button">
+               <div class="icon">
+                <i class="fa-brands fa-twitter"></i>
+               </div>
+               <span>Twitter</span>
+            </div>
+            <div class="button">
+               <div class="icon">
+                  <i class="fab fa-instagram"></i>
+               </div>
+               <span>Instagram</span>
+            </div>
+            <div class="button">
+               <div class="icon">
+                <i class="fa-brands fa-tiktok"></i>
+               </div>
+               <span>TikTok</span>
+            </div>
+            <div class="button">
+               <div class="icon">
+                  <i class="fab fa-youtube"></i>
+               </div>
+               <span>YouTube</span>
+            </div>
+            <div class="button">
+                <div class="icon">
+                    <i class="fa-brands fa-soundcloud"></i>
+                </div>
+                <span>SoundCloud</span>
+             </div>
+         </div>
+    </div>
+
+    </div>
+
+
+
+   <!----==== Footer FLASH!!!!!!!!!!!!!!---->
+   <div class="footer" id="footer">
+    <div class="container">
+       <div class="row">
+          <div class="footer-col-1">
+             <h3 class="our-app">Download Our App</h3>
+             <p class="our-app-1">Download App for Android and IOS mobile phone.</p>
+             <div class="app-logo">
+                <img src="{% static 'media/play-store.png'%}" alt="play-store">
+                <img src="{% static 'media/app-store.png'%}" alt="app-store">
+             </div>
+          </div>
+       </div>
+       <hr>
+       <p class="copyright">Copyright <script>document.write(new Date().getFullYear())</script> - B-Tools</p>
+    </div>
+ </div>
+ <!-- end footer -->
+
+</body>
+</html>

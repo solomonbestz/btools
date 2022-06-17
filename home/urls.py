@@ -6,5 +6,6 @@ from home import views
 urlpatterns = [
     path('', views.home, name="home"),
     path('gdrive', views.g_drive, name="gdrive"),
-    path('secondpage', views.secondpage, name="secondpage")
+    path('secondpage', views.secondpage, name="secondpage"),
+    path('videodownloader', views.videodownloader, name="videodownloader"),
 ]

@@ -9,3 +9,5 @@ def secondpage(request):
 def g_drive(request):
     return render(request, "drive.html")
 
+def videodownloader(request):
+    return render(request, "videodownloader.html")
