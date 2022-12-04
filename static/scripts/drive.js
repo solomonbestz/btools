@@ -2,7 +2,7 @@ let g_link = document.getElementById("sharelink")
 let converted_link = document.getElementById("downloadlink")
 let copy_alert = document.getElementById("alert-copy")
 let link1 = ["/file/d/", "/uc?id="]
-let link2 = ["/view?usp=sharing", "&export=download"]
+let link2 = ["/view?usp=share_link", "&export=download"]
 
 // FUNCTION TO GENERATE DOWNLOADABLE LINK
 function generatebtn(){
